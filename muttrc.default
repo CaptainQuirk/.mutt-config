@@ -53,7 +53,8 @@ unhdr_order *                           # some distros order things by default
 hdr_order from: to: cc: date: subject:  # and in this order
 
 
-# Account Settings -----------------------------------
+# Account Settings
+# ----------------
 
 # Default inbox.
 set spoolfile = "+<account>/INBOX"
