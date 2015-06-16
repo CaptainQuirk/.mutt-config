@@ -94,3 +94,15 @@ set from = "thecaptainquirk@gmail.com"
 set sendmail = "/usr/local/bin/msmtp -a thecaptainquirk"
 set sendmail_wait = 0
 unset record
+
+
+# Searching with notmuch
+# ----------------------
+
+set nm_default_uri = "notmuch:///Users/leonard/.mail/"
+set virtual_spoolfile = yes
+virtual-mailboxes \
+  "INBOX"   "notmuch://?query=tag:inbox and NOT tag:archive"\
+  "Unread"  "notmuch://?query=tag:unread"\
+  "Starred" "notmuch://?query=tag:*"\
+  "Sent"    "notmuch://?query=tag:sent"
