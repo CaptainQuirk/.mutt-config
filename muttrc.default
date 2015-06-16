@@ -25,6 +25,13 @@ set pipe_decode          # strip headers and eval mimes when piping
 set thorough_search      # strip headers and eval mimes before searching
 
 
+# Sidebar
+# -------
+
+set sidebar_visible = yes
+set sidebar_width = 20
+
+
 # Status Bar
 # ----------
 
